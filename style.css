@@ -1,4 +1,7 @@
-* {
+
+
+ *
+{
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
@@ -12,6 +15,10 @@ body {
     min-height: 100vh;
     background: #33aa85;
 }
+header { 
+    text-align: center; /* Centramos el contenido del header */ 
+    padding-top: 20px; /* Añadimos un poco de espacio en la parte superior */
+ }
 
 .Lista {
     padding: 30px 75px 10px 30px;
