@@ -10,10 +10,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    align-items: center;
+    align-items:last baseline;
     min-height: 100vh;
     background: rgba(35, 43, 40, 0.7);
     position: relative;
+  
 }  
 body::before {
     content: "";
@@ -44,6 +45,9 @@ h1{
     position: relative;
     background: #04ab10;
     border-top: 50px solid #dbf7f8;
+    opacity: 0.8;
+    
+    
 }
 
 .Lista h2 {
