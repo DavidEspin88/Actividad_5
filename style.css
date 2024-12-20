@@ -54,6 +54,11 @@ img {
     height: auto;
     border: 3px solid white;
     border-radius: 10px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
 }
 
 .Lista {
@@ -138,4 +143,5 @@ img {
 .Lista input[type="checkbox"]:checked ~ span {
     color: #0477ba;
 }
+
 

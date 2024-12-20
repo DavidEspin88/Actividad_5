@@ -13,32 +13,45 @@
         </div>
         <div class="cajaContenido">
             <div class="cajaImagen">
-                <img src="FormacionCCA.png" alt="Coraje">
+                <img id="imagenPrincipal" src="FormacionCCA.png" alt="Coraje">
             </div>
             <div class="Lista">
-                <h2>Lista de Actividades</h2>
+                <h2 id="tituloLista">Ingresa</h2>
                 <label>
                     <input type="checkbox" name="">
                     <i></i>
-                    <span><a href="https://www.youtube.com" target="_blank">Ver YouTube</a></span>
+                    <span><a href="https://www.youtube.com" target="_blank">Formacion</a></span>
                 </label>
                 <label>
                     <input type="checkbox" name="">
                     <i></i>
-                    <span><a href="#" target="_blank">Hacer tareas</a></span>
+                    <span><a href="#" target="_blank">Caracter</a></span>
                 </label>
                 <label>
                     <input type="checkbox" name="">
                     <i></i>
-                    <span><a href="#" target="_blank">Revisar la plataforma</a></span>
+                    <span><a href="#" target="_blank">Esfuerzo</a></span>
                 </label>
                 <label>
                     <input type="checkbox" name="">
                     <i></i>
-                    <span><a href="#" target="_blank">No morirme de hambre</a></span>
+                    <span><a href="#" target="_blank">Compromiso</a></span>
                 </label>
             </div>
         </div>
     </div>
+
+    <script>
+        const tituloLista = document.getElementById("tituloLista");
+        const imagenPrincipal = document.getElementById("imagenPrincipal");
+
+        tituloLista.addEventListener("mouseover", () => {
+            imagenPrincipal.src = "ingreso.jpg"; 
+        });
+
+        tituloLista.addEventListener("mouseout", () => {
+            imagenPrincipal.src = "FormacionCCA.png"; 
+        });
+    </script>
 </body>
 </html>
