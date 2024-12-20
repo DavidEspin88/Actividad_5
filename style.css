@@ -9,22 +9,33 @@
 }
 
 body {
-    display: left;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
     align-items: center;
     min-height: 100vh;
-    background: #33aa85;
+    background: #cce7e1;
+
 }
 header { 
-    text-align: center; /* Centramos el contenido del header */ 
-    padding-top: 20px; /* Añadimos un poco de espacio en la parte superior */
+    text-align: center; 
+    padding-top: 20px; 
+ }
+
+ h1{
+    font-size: 6vw;
+    color:white;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    
  }
 
 .Lista {
     padding: 30px 75px 10px 30px;
     position: relative;
     background: #04ab10;
-    border-top: 50px solid #0eeef4;
+    border-top: 50px solid #dbf7f8;
 }
 
 .Lista h2 {
