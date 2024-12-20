@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleCaracter.css">
     <title>Formación</title>
 </head>
 <body>
@@ -13,14 +13,14 @@
         </div>
         <div class="cajaContenido">
             <div class="cajaImagen">
-                <img id="imagenPrincipal" src="imagenes/segruidad.jpg" alt="Coraje">
+                <img id="imagenVideo" src="imagenes/segruidad.jpg" alt="Video Coraje" style="cursor:pointer">
             </div>
             <div class="Lista">
                 <h2 id="tituloLista">Ingresa</h2>
                 <label>
                     <input type="checkbox" name="">
                     <i></i>
-                    <span><a href="" target="_blank">Formacion</a></span>
+                    <span><a href="index.html" target="_blank">Formacion</a></span>
                 </label>
                 <label>
                     <input type="checkbox" name="">
@@ -40,5 +40,17 @@
             </div>
         </div>
     </div>
+    <script>
+        const imagenVideo = document.getElementById("imagenVideo");
+        imagenVideo.addEventListener("click", () => {
+           
+            const video = document.createElement("video");
+            video.src = "Videos/MENTALIDAD.mp4"; 
+            video.controls = true;
+            video.autoplay = true;
+            video.style.width = "100%";
+            imagenVideo.parentNode.replaceChild(video, imagenVideo);
+        });
+    </script>
 </body>
 </html>
