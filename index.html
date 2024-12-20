@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Lista de chequeo</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
         </div>
         <div class="cajaContenido">
             <div class="cajaImagen">
-                <img id="imagenPrincipal" src="FormacionCCA.png" alt="Coraje">
+                <img id="imagenPrincipal" src="imagenes/FormacionCCA.png" alt="Coraje">
             </div>
             <div class="Lista">
                 <h2 id="tituloLista">Ingresa</h2>
@@ -46,11 +46,11 @@
         const imagenPrincipal = document.getElementById("imagenPrincipal");
 
         tituloLista.addEventListener("mouseover", () => {
-            imagenPrincipal.src = "ingreso.jpg"; 
+            imagenPrincipal.src = "imagenes/ingreso.jpg"; 
         });
 
         tituloLista.addEventListener("mouseout", () => {
-            imagenPrincipal.src = "FormacionCCA.png"; 
+            imagenPrincipal.src = "imagenes/FormacionCCA.png"; 
         });
     </script>
 </body>
